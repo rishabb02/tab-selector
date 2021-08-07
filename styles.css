@@ -1,0 +1,48 @@
+.container {
+    width: 80%;
+    height: 50%;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+}
+
+.tab {
+    padding: 20px;
+    
+}
+.tab:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.tab-info{
+    padding: 10px;
+}
+
+.tab-info-details{
+    display: none;
+}
+
+.show{
+    display: block;
+    animation: fade 1s;
+}
+
+.active {
+    background-color: darkgray;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
